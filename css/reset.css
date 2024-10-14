@@ -39,3 +39,18 @@ q:before,q:after {
 }
 abbr,acronym { border:0;
 }
+
+@media (max-width: 768px) {
+    header, main {
+      width: 100%;
+      padding: 1.5rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .imageR {
+      width: 40%;
+    }
+  }
