@@ -1,15 +1,12 @@
 /* styles.css */
 
 /* Importing Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
 
 
-
-
-
+/* General Styles that apply to all web pages */
 header {
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+  background-color: transparent;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -19,8 +16,14 @@ header {
 }
 
 header h3{
+  font-family: 'Garamond', sans-serif;
   color: white;
   font-weight: bold;
+}
+
+header ul{
+  font-family: 'Garamond', sans-serif;
+  color: white;
 }
 
 nav ul {
@@ -36,12 +39,6 @@ nav a {
   text-decoration: none;
   display: inline-block;
   font-size: 1.2rem;
-}
-
-nav a:hover {
-  color: Black;
-  opacity: 0.6;
-  transition: 0.2s;
 }
 
 section {
@@ -70,39 +67,19 @@ ul ul {
   
 }
 
-.imageR {
-  width: 20%;
-  max-width: 150px;
-  border-radius: 50%;
-  margin: 1rem auto;
-  display: block;
-}
-
-.imageA {
-  width: 30%;
-  height: auto;
-  margin: 1rem auto;
-  display: block;
-}
-
 iframe {
   aspect-ratio: 16/9;
   width: 100%;
 }
 
-p{
+p {
   text-align: center;
   color: white;
+  padding: 0.5%;
+  font-size: large;
 }
 
-#indexbody {
-  font-family: 'Cormorant+Garamond', sans-serif;
-  background-image: url('../images/Grid.png');
-  background-attachment: fixed;
-  background-size: cover;
-  line-height: 1.6;
-  padding: 2%;
-}
+/* These apply to all as well*/
 #Intro h1 {
   text-align: center;
   font-weight: bold;
@@ -116,6 +93,22 @@ p{
   
 }
 
+/*Styles that apply to the index.html file*/
+#indexheader nav a:hover {
+  color: Black;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+#indexbody {
+  font-family: 'Garamond', sans-serif;
+  background-image: url('../images/Grid.png');
+  background-attachment: fixed;
+  background-size: cover;
+  line-height: 1.6;
+  padding: 2%;
+}
+
 #indexmain {
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,0.6010737058495272) 0%, rgba(0,0,0,1) 100%);
@@ -125,10 +118,23 @@ p{
 }
 
 #Contact h3 {
+  font-size: x-large;
+  font-weight: bold;
   text-align: center;
   color: White;
 }
 
+.imageR {
+  width: 20%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: block;
+}
+
+
+
+/*Styles that apply to the yugioh tutorial html file*/
 #ytheader nav a:hover {
   color: Gold;
   opacity: 0.6;
@@ -136,7 +142,8 @@ p{
 }
 
 #ytmain{
-  background: linear-gradient(0deg, rgba(161, 120, 0, 1), rgba(0, 0, 0, 1));
+  background: rgb(255,135,0);
+  background: linear-gradient(180deg, rgba(255,135,0,1) 0%, rgba(255,255,255,0) 100%);
   padding: 2%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -163,7 +170,7 @@ p{
 }
 
 #ytbody {
-  font-family: 'Cormorant+Garamond', sans-serif;
+  font-family: "Comic Neue", sans-serif;
   background-image: url('../images/CardBack.png');
   background-size: cover;
   background-attachment: fixed;
@@ -172,9 +179,11 @@ p{
 
 }
 
+
+/* Styles that apply to the collection.html file*/
 #collectionbody{
-  font-family: 'Cormorant+Garamond', sans-serif;
-  background-image: url('../images/Stockshelf.jpg');
+  font-family: "Comic Neue", sans-serif;
+  background-image: url('../images/Wood.png');
   background-size: cover;
   background-attachment: fixed;
   line-height: 1.6;
@@ -182,17 +191,31 @@ p{
 }
 
 
-#collectionsheader nav a:hover {
+#collectionheader nav a:hover {
   color: burlywood;
   opacity: 0.6;
   transition: 0.2s;
 }
 
 #collectionmain{
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(114,87,15,1) 50%, rgba(101,61,4,1) 100%);
+  background: rgb(114,57,0);
+  background: linear-gradient(180deg, rgba(114,57,0,1) 0%, rgba(255,255,255,0) 100%);
   padding: 2%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.imageA {
+  width: 30%;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 10px 10px black;
+}
+
+#collectionmain h2{
+  text-decoration: underline;
+}
+
+
 
