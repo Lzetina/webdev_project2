@@ -103,7 +103,7 @@ p {
 
 #indexbody {
   font-family: 'Garamond', serif;
-  background-image: url('../images/Grid.png');
+  background-image: url('../images/grid.png');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -187,7 +187,7 @@ p {
 
 #ytbody {
   font-family: "Comic Neue", fantasy;
-  background-image: url('../images/CardBack.png');
+  background-image: url('../images/cardback.png');
   float: right;
   background-size: cover;
   background-attachment: fixed;
@@ -200,7 +200,7 @@ p {
 /* Styles that apply to the collection.html file*/
 #collectionbody {
   font-family: "Comic Neue", fantasy;
-  background-image: url('../images/Wood.png');
+  background-image: url('../images/wood.png');
   background-size: cover;
   background-attachment: fixed;
   line-height: 1.6;
